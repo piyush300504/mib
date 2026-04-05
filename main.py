@@ -1,10 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from database import engine
-import models
 from routers import auth, admin, teacher, student
 
-models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
     title="LMS System", description="Admin / Teacher / Student LMS API", version="0.1.0"
