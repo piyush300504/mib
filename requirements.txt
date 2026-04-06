@@ -3,6 +3,7 @@ uvicorn[standard]
 pymongo
 python-dotenv
 dnspython
+certifi
 python-jose[cryptography]
 bcrypt
 python-multipart
